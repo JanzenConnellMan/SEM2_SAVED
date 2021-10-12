@@ -48,7 +48,7 @@ names(Y) <- seq(1:S)
 
 d <- 1
 Dist.Rate <- .0025
-Rad <- 12
+Rad <- 11
 set.seed(150)
 
 
@@ -72,7 +72,7 @@ for(mm in 1:TimeSteps){
     Local_Species <- Mat.S2[x.val[x],y.val[x]]   # defines the locally disturbed species 
     
     
-    Rad <- 12
+    Rad <- 11
     JC.Victims   <- mat.torus(Mat.S2,Rad,x.val[x],y.val[x])
     #JC.Victims_No <- c(unique(Mat.S2[c(Mat.S2 %!in% JC.Victims)])) # Select Species not affected by distance dependnce
     
